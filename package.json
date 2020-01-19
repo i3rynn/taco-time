@@ -1,5 +1,5 @@
 {
-  "name": "tacotime",
+  "name": "taco-time",
   "version": "1.0.0",
   "description": "Taco application with Node.js, Express, Handlebars, and MySQL.",
   "main": "index.js",
