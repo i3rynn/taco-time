@@ -1,0 +1,42 @@
+<h1>Taco Time!</h1>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+        {{#each tacos}}
+          {{#unless this.devoured}}
+            <div>
+              <form action="/tacos/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class='tacoAvailable'> {{this.taco_name}}</button>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+      <div class="col s6">
+        {{#each tacos}}
+          {{#if this.devoured}}
+            <div class='tacoEaten'>
+              <div>
+                {{this.taco_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+
+<h2>Make A Taco Request</h2>
+
+<div class="row">
+  <div class="col s12">
+    <form action="/tacos" method="POST">
+      <input type="text" id="name" name="taco_name" placeholder="Doble Queso Taco">
+      <button type="submit" class="addTacoButton">Request the Taco</button>
+    </form>
+  </div>
+</div>
