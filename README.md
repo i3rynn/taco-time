@@ -15,7 +15,7 @@ The demo of the taco eating application can be found [here](https://secret-lake-
 
 To run the application locally, first clone this repository with the following command.
 
-	git clone git@github.com:i3rynn/TacoTime.git
+	git clone git@github.com:i3rynn/taco-time.git
 	
 Next, install the application dependencies.
 
